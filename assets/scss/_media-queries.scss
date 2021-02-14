@@ -2,6 +2,7 @@
     main{
         padding-top: 100px;
         padding-bottom: 50px;
+        background-image: url(../img/Imagenes_Pagina_bienvenida_vertical.jpg);
         div{
             p{
                 text-align: center;
@@ -29,5 +30,19 @@
             padding-bottom: 10px;
         }
     }
+
+    footer{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
+@media only screen and (min-width: 768px){
+    main{
+        background-image: url(../img/Imagenes_Pagina_bienvenida.jpg);
+        width: 720px;
+        height: 1080px;
+    }
+}

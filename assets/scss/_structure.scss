@@ -12,11 +12,15 @@ html{
 }
 
 main{
-    background-image: url(../img/black_bckgrnd.jpg);
     color: $pers-white;
 }
 
 #section-designs, #section-orderDesign{
     background-color: $pers-red;
     color: $pers-white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }

@@ -1,7 +1,8 @@
 @media only screen and (min-width: 320px) {
   main {
     padding-top: 100px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    background-image: url(../img/Imagenes_Pagina_bienvenida_vertical.jpg); }
     main div p {
       text-align: center; }
   nav {
@@ -14,7 +15,18 @@
   #section-orderDesign h3 {
     text-align: center;
     text-decoration: underline;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+  footer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
+
+@media only screen and (min-width: 768px) {
+  main {
+    background-image: url(../img/Imagenes_Pagina_bienvenida.jpg);
+    width: 720px;
+    height: 1080px; } }
 
 html h2 {
   text-align: center; }
@@ -26,9 +38,12 @@ html p, html a {
   font-family: 'Lato', sans-serif; }
 
 main {
-  background-image: url(../img/black_bckgrnd.jpg);
   color: #f6f6f6; }
 
 #section-designs, #section-orderDesign {
   background-color: #be1622;
   color: #f6f6f6; }
+
+form {
+  display: flex;
+  flex-direction: column; }
