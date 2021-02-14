@@ -1,0 +1,33 @@
+@media only screen and (min-width: 320px){
+    main{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        div{
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    nav{
+        width: 320px;
+    }
+
+    #section-designs{
+        padding-top: 20px;
+    }
+
+    #carouselExampleCaptions{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #section-orderDesign{
+        h3{
+            text-align: center;
+            text-decoration: underline;
+            padding-bottom: 10px;
+        }
+    }
+}
+
