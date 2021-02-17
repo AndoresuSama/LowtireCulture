@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="./assets/css/styles.css">
         <title>Lowtire Culture</title>
     </head>
-    <body>
+    <body id="body-modiffier">
         <header>
             <!-- Nav Menu -->
             <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
                 <div class="container-fluid">
                     <!-- Link hacia el Index -->
-                    <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="./assets/img/logo lettering Negro.png" alt="Logo Lowtire Culture" width="182px"></a>
+                    <a class="navbar-brand js-scroll-trigger" href="index.html" id="logo"><img src="./assets/img/logo lettering Negro.png" lettering_b"" alt="Logo Lowtire Culture" width="182px"></a>
                     <!-- Botón para menú desplegable disp móviles -->
                     <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
@@ -32,10 +32,12 @@
                             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#section-orderDesign">Order a design</a></li>
                             <!-- Seccion 4 -->
                             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#footer">Social Networks</a></li>
+                            <li class="nav-item mx-0 mx-lg-1" id="botonEnLista"><input type="button" value="Click to enable Dark Mode" id="darkModeButton"/></li>
                         </ul>
                     </div>
                 </div>
             </nav>
+        </header>
         <main class="container-fluid" id="main-welcome">
             <!-- Welcome section here -->
             <div class="welcome-container">
@@ -139,7 +141,7 @@
             <p>Pricing 45$</p>
             <img src="./assets/img/Subaru Paradise.png" width= 300px>  
         </section>
-        <section class="contaier-fluid">
+        <section class="contaier-fluid" id="section-request-form">
             <!-- Order My Own Design (Form) here -->
             <h2>Design Request form</h2>
             <form>
@@ -163,13 +165,13 @@
                 <input type="submit" name="send">
                 <input type="reset" name="eraseAll">
             </form>
-        </section>
-        <section class="container-fluid">
-            <!-- Order My Own Design (Frequent Questions) here -->
-            <p>- What do I need for my car or motorcycle illustration?</p>
-            <p>Write me in the comment box any description and send me a photograph in high resolution to my email and we will start</p>
-            <p>- Can I add parts to the car that are not in the picture?</p>
-            <p>No, in the photograph all the accessories must be in the car to carry out the work, we recommend choosing a photograph with the car or motorcycle ready to draw</p>
+          <div class="container-fluid">
+              <!-- Order My Own Design (Frequent Questions) here -->
+              <p>- What do I need for my car or motorcycle illustration?</p>
+              <p>Write me in the comment box any description and send me a photograph in high resolution to my email and we will start</p>
+              <p>- Can I add parts to the car that are not in the picture?</p>
+              <p>No, in the photograph all the accessories must be in the car to carry out the work, we recommend choosing a photograph with the car or motorcycle ready to draw</p>
+          </div>
         </section>
         <footer class="container-fluid" id="footer">
             <h4>Contact me!</h4>
@@ -178,11 +180,11 @@
             <a href="https://www.facebook.com/Lowtireculture"><img src="./assets/img/fb.png" width="30" height="30"></a>
             <a href="https://www.redbubble.com/es/people/Lowtirecullture/shop"><img src="./assets/img/red.png" width="30" height="30"></a>
         </footer>   
-    <!-- <script src="./cotizador.js"></script> ACTIVAR PARA ACTIVAR EL JS DEL COTIZADOR-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- <script src="./cotizador.js"></script> ACTIVAR PARA ACTIVAR EL JS DEL COTIZADOR-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./assets/js/clase9.js"></script>
     </body>
 </html>

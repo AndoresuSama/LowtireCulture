@@ -29,7 +29,7 @@
 html h2 {
   text-align: center; }
 
-html h1, html h2, html h3, html h4, html h5, html h6, html button {
+html h1, html h2, html h3, html h4, html h5, html h6, html button, html input {
   font-family: 'Montserrat', sans-serif; }
 
 html p, html a {
@@ -45,3 +45,8 @@ main {
 form {
   display: flex;
   flex-direction: column; }
+
+.darkModeEnabled {
+  background-color: #1b1b1d; }
+  .darkModeEnabled a, .darkModeEnabled p, .darkModeEnabled h1, .darkModeEnabled h2, .darkModeEnabled h3, .darkModeEnabled h4, .darkModeEnabled h5, .darkModeEnabled h6, .darkModeEnabled button {
+    color: #f6f6f6; }
