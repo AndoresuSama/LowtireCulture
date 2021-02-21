@@ -25,9 +25,29 @@ form{
     flex-direction: column;
 }
 
+#section-request-form, #freq-questions{
+    padding-top: 20px;
+}
+
+.btn-primary{
+    background-color: $pers-red;
+    border-color: $pers-white;
+}
+
+.btn-primary:hover{
+    background-color: $pers-red;
+    border-color: $pers-white;
+}
+
 .darkModeEnabled{
     background-color: $pers-black;
     a, p, h1, h2, h3, h4, h5, h6, button{
         color: $pers-white;
+    }
+    button{
+        color: $pers-black;
+    }
+    label{
+        color: white;
     }
 }

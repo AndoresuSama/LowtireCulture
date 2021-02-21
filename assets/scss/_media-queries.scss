@@ -45,6 +45,10 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .padding-subaru{
+        padding-bottom: $padding-subaru;
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -52,5 +56,53 @@
         background-image: url(../img/Imagenes_Pagina_bienvenida.jpg);
         width: 720px;
         height: 1080px;
+    }
+
+    a{
+        img{
+            width: 190px;
+        }
+    }
+
+    #main-welcome{
+        font-size: 1rem;
+        h2{
+            text-align: start;
+        }
+        p{
+            text-align: start;
+            font-size: 1.5rem;
+        }
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .welcome-container{
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        padding-bottom: 120px;
+    }
+
+    .center-logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #section-request-form{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    #freq-questions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .igLogo, .tiktokLogo, .fbLogo, .redbbLogo{
+        height: 10px;
+        width: 10px;
     }
 }
