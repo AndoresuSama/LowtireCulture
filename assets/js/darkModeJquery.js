@@ -41,7 +41,7 @@ function enableDarkMode(){
     tiktokLogo.attr("src", "./assets/img/tiktok-wh.png");
     fbLogo.attr("src", "./assets/img/fb-bla.png");
     redbbLogo.attr("src", "./assets/img/red-wh.png");
-    darkModeButton.value = "Click to enable Light Mode";
+    darkModeButton.value = "Click to disable Light Mode";
     findButton.click(function(){
         disableDarkMode()
     })
@@ -49,23 +49,18 @@ function enableDarkMode(){
 
 function disableDarkMode(){
     localStorage.setItem("Dark mode", "off");
-    findNav.removeAttribute("class");
-    findNav.setAttribute("class", "navbar navbar-expand-lg bg-secondary text-uppercase fixed-top");
-    findRqstForm.removeAttribute("class");
-    findFooter.removeAttribute("class");
-    findBody.removeAttribute("class");
-    findLogo[0].removeAttribute("src");
-    findLogo[0].setAttribute("src", "./assets/img/logo lettering Negro.png");
-    findLogo[5].removeAttribute("src");
-    findLogo[5].setAttribute("src", "./assets/img/Porsche white.svg");
-    igLogo.removeAttribute("src");
-    igLogo.setAttribute("src", "./assets/img/ig.png");
-    tiktokLogo.removeAttribute("src");
-    tiktokLogo.setAttribute("src", "./assets/img/tik-tok.png");
-    fbLogo.removeAttribute("src");
-    fbLogo.setAttribute("src", "./assets/img/fb.png");
-    redbbLogo.removeAttribute("src");
-    redbbLogo.setAttribute("src", "./assets/img/red.png");
-    findButton.removeEventListener("click", disableDarkMode);
-    findButton.addEventListener("click", enableDarkMode);
+    findNav.removeClass("enableDarkMode");
+    findRqstForm.removeAttr("class");
+    findFooter.removeAttr("class");
+    findBody.removeAttr("class");
+    findLogo.attr("src", "./assets/img/logo lettering Negro.png");
+    findPorsche.attr("src", "./assets/img/Porsche white.svg");
+    igLogo.attr("src", "./assets/img/ig.png");
+    tiktokLogo.attr("src", "./assets/img/tik-tok.png");
+    fbLogo.attr("src", "./assets/img/fb.png");
+    redbbLogo.attr("src", "./assets/img/red.png");
+    darkModeButton.value = "Click to enable Light Mode";
+    findButton.click(function(){
+        enableDarkMode()
+    })
 }
