@@ -41,7 +41,7 @@ function enableDarkMode(){
     tiktokLogo.attr("src", "./assets/img/tiktok-wh.png");
     fbLogo.attr("src", "./assets/img/fb-bla.png");
     redbbLogo.attr("src", "./assets/img/red-wh.png");
-    darkModeButton.value = "Click to disable Light Mode";
+    darkModeButton.value = "Click to disable Dark Mode";
     findButton.click(function(){
         disableDarkMode()
     })
@@ -49,7 +49,7 @@ function enableDarkMode(){
 
 function disableDarkMode(){
     localStorage.setItem("Dark mode", "off");
-    findNav.removeClass("enableDarkMode");
+    findNav.removeClass("darkModeEnabled");
     findRqstForm.removeAttr("class");
     findFooter.removeAttr("class");
     findBody.removeAttr("class");
@@ -59,7 +59,7 @@ function disableDarkMode(){
     tiktokLogo.attr("src", "./assets/img/tik-tok.png");
     fbLogo.attr("src", "./assets/img/fb.png");
     redbbLogo.attr("src", "./assets/img/red.png");
-    darkModeButton.value = "Click to enable Light Mode";
+    darkModeButton.value = "Click to enable Dark Mode";
     findButton.click(function(){
         enableDarkMode()
     })
