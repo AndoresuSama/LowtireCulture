@@ -10,9 +10,15 @@ let igLogo = $("#ig-logo");
 let tiktokLogo = $("#tiktok-logo");
 let fbLogo = $("#fb-logo");
 let redbbLogo = $("#redbb-logo");
+//var time = null;
+//var flag = true;
 
 findButton.click(function(){
     enableDarkMode()
+    findButton.prop("disabled", true);
+    setInterval(() => {
+        findButton.prop("disabled", false);
+    }, 1000);
 })
 
 let theme = localStorage.getItem("Dark mode");
@@ -43,8 +49,12 @@ function enableDarkMode(){
     redbbLogo.attr("src", "./assets/img/red-wh.png");
     darkModeButton.value = "Click to disable Dark Mode";
     findButton.click(function(){
-        disableDarkMode()
-    })
+        disableDarkMode();
+        findButton.prop("disabled", true);
+        setInterval(() => {
+        findButton.prop("disabled", false);
+        }, 1000);
+    });
 }
 
 function disableDarkMode(){
@@ -61,6 +71,21 @@ function disableDarkMode(){
     redbbLogo.attr("src", "./assets/img/red.png");
     darkModeButton.value = "Click to enable Dark Mode";
     findButton.click(function(){
-        enableDarkMode()
-    })
+        enableDarkMode();
+        findButton.prop("disabled", true);
+        setInterval(() => {
+        findButton.prop("disabled", false);
+        }, 1000);
+    });
 }
+
+/*if (flag) {
+        Flag = false;
+        time = setInterval(function () {
+            clearInterval(time);//clear timer
+            Flag = true;
+        }, 1000);//A second is available
+    return true;
+    } else {
+        return false;
+    }*/
